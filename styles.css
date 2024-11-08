@@ -1,0 +1,172 @@
+body {
+    font-family: "Rubik", sans-serif;
+}
+
+.heightt {
+    height: 100vh;
+}
+
+::selection {
+    background-color: rgb(50, 185, 185);
+    color: white;
+}
+
+.hero {
+    background-image: url('./images/hero_1.jpg.webp');
+    background-size: cover;
+    position: relative;
+    color: white;
+    height: 100vh;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.content,
+.logo {
+    z-index: 3;
+}
+
+.navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    transition: transform 0.4s ease-in-out;
+    z-index: 11;
+}
+
+.navbar-nav .nav-link {
+    font-size: 24px;
+    margin: 15px 0;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: teal;
+}
+
+.navbar-toggler {
+    z-index: 15;
+}
+
+.btn {
+    width: 12rem;
+    background: transparent;
+    font-size: 1.2em;
+    font-family: 'Rubik';
+    border: 2px solid white;
+    color: white;
+}
+
+.btn:hover {
+    background-color: white;
+    color: teal;
+}
+
+.card-img-top {
+    width: 5rem;
+    margin: 2rem auto;
+}
+
+.card {
+    text-align: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, 0.887);
+    border-radius: 50%;
+}
+
+.carousel-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.txt h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.sec {
+    color: white;
+    background: #65c0ba !important
+}
+
+.paddings {
+    padding: 7em 0;
+}
+
+.card-bodyy {
+    padding: 2em;
+}
+
+.reviews-star span {
+    font-size: 18px;
+    color: #65c0ba;
+}
+
+.reviews-star span::before {
+    content: "\2605";
+}
+
+.footer {
+    color: white;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer li a {
+    color: rgba(255, 255, 255, 0.686);
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.footer li a:hover {
+    color: white;
+}
+
+.custom-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #65c0ba;
+    color: white;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 0;
+    outline: none;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.custom-input:focus {
+    outline: none;
+    background-color: transparent;
+    border-bottom-color: #3ca59c;
+}
